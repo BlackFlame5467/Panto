@@ -1,0 +1,20 @@
+.nav__list {
+    justify-self: center;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 65px;
+    
+    &-link {
+        font-size: 18px;
+        transition: color .3s ease-in;
+        
+        &:hover {
+            color: $color-orange;
+        }
+    }
+}
+
+

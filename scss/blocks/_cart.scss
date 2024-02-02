@@ -1,0 +1,26 @@
+.cart {
+    justify-self: end;
+    align-self: center;
+
+    position: relative;
+    &__img {
+        
+    }
+
+    &__count {
+        display: inline-block;
+        height: 25px;
+        border-radius: 40px;
+        padding: 0 6px;
+        
+        font-weight: 700;
+        line-height: 25px;
+
+        position: absolute;
+        right: -12px;
+        top: -3px; 
+
+
+        background: $bg-orange;
+    }
+}

@@ -1,0 +1,13 @@
+body {
+    color: $color-main;
+    font-family: $font-main;
+
+    a {
+        color: $color-main;
+    }
+}
+.container {
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

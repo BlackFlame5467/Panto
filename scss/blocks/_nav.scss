@@ -1,0 +1,15 @@
+.nav {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    align-self: center;
+    gap: 20px;
+
+    padding: 40px 0 0 0;
+    &__link {
+        font-size: 28px;
+        font-weight: 700;
+        align-self: center;
+        text-transform: capitalize;
+    }
+
+}
