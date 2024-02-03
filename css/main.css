@@ -100,7 +100,12 @@ body a {
   margin: 0 auto;
 }
 
+.none {
+  display: none !important;
+}
+
 .header {
+  position: relative;
   background-color: #2D2F33;
   background: url(../img/header/header-bg.jpeg);
   background-size: cover;
@@ -127,6 +132,26 @@ body a {
 }
 .header__form {
   margin: 45px auto 0;
+}
+.header__dot-sofa {
+  position: absolute;
+  top: 63.1918819188%;
+  left: 20.5555555556%;
+}
+.header__dot-vase {
+  position: absolute;
+  top: 69.4649446494%;
+  left: 7.8472222222%;
+}
+.header__dot-item {
+  position: absolute;
+  top: 72.6014760148%;
+  left: 56.25%;
+}
+.header__dot-wall {
+  position: absolute;
+  top: 75.7380073801%;
+  right: 3.1944444444%;
 }
 
 .nav {
@@ -204,4 +229,87 @@ body a {
   padding: 11px;
   border-radius: 24px;
   background: #E58411;
+}
+
+.info__dot {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.info__dot-radius {
+  width: 32px;
+  height: 32px;
+  border: 0.86px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.2);
+  animation: pulse 1s alternate infinite;
+}
+.info__dot-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  transition: background 0.3s ease-in;
+}
+
+.info__dot:hover .info__dot-radius {
+  animation: pulse 1s infinite alternate paused;
+}
+
+.info__dot:hover .info__dot-center {
+  background: #E58411;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.info__hint {
+  position: absolute;
+  top: -80px;
+  left: -46px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 15px 0 0 0;
+  width: 125px;
+  height: 63px;
+  background: url(../img/header/hint.svg) center/cover no-repeat;
+}
+.info__hint-radio {
+  display: none;
+}
+.info__hint-radio-fake {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+}
+.info__hint-radio-fake--orange {
+  background: #E58411;
+}
+.info__hint-radio-fake--biruza {
+  background: #00D6C9;
+}
+.info__hint-radio-fake--gray {
+  background: #7C7C7C;
+}
+
+.info__hint-radio:checked + .info__hint-radio-fake {
+  background-image: url(../img/header/checked.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=main.css.map */

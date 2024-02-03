@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+
     background-color: $bg-footer;
     background: url(../img/header/header-bg.jpeg);
     background-size: cover;
@@ -32,5 +34,25 @@
 
     &__form {
         margin: 45px auto 0;
+    }
+    &__dot-sofa {
+        position: absolute;
+        top: calc( 685 * 100% / 1084 );
+        left: calc( 296 * 100% / 1440 );
+    }
+    &__dot-vase {
+        position: absolute;
+        top: calc( 753 * 100% / 1084 );
+        left: calc( 113 * 100% / 1440 );
+    }
+    &__dot-item {
+        position: absolute;
+        top: calc( 787 * 100% / 1084 );
+        left: calc( 810 * 100% /  1440 );
+    }
+    &__dot-wall {
+        position: absolute;
+        top: calc( 821 * 100% / 1084 );
+        right: calc( 46 * 100% / 1440 );
     }
 }
