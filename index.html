@@ -8,13 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__nav">
                 <nav class="nav">
-                    <a href="#" class="nav__link">Panto</a>
+                    <div class="nav__link">
+                        <a href="#" class="logo">Panto</a>
+                    </div>
                      <ul class="nav__list">
                         <li><a href="#" class="nav__list-link">Furniture</a></li>    
                         <li><a href="#" class="nav__list-link">Shop</a></li>    
@@ -119,6 +122,291 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="benefits">
+            <div class="container">
+                <div class="benefit__list">
+                    <h2 class="benefits__title">Why Choosing Us</h2>
+                    <div class="benefit">
+                        <h3 class="benefit__title">Luxury facilities</h3>
+                        <p class="benefit__text">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+                        <a href="#!" class="benefit__link link">More Info</a>
+                    </div>
+                    <div class="benefit">
+                        <h3 class="benefit__title">Affordable Price</h3>
+                        <p class="benefit__text">You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.</p>
+                        <a href="#!" class="benefit__link link">More Info</a>
+                    </div>
+                    <div class="benefit">
+                        <h3 class="benefit__title">Many Choices</h3>
+                        <p class="benefit__text">We provide many unique work space choices so that you can choose the workspace to your liking.</p>
+                        <a href="#!" class="benefit__link link">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <h2 class="products__title">Best Selling Product</h2>
+                <div class="products__tabs">
+                    <div class="products__tabs-inner">
+                        <button class="products__tab products__tab--active">Chair</button>
+                        <button class="products__tab">Beds</button>
+                        <button class="products__tab">Sofa</button>
+                        <button class="products__tab">Lamp</button>
+                    </div>
+                </div>
+                <div class="products__cards">
+                    <div class="slider">
+
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="card swiper-slide">
+                                    <a href="#product__link" class="card__link"></a>
+                                    <div class="card__photo">
+                                        <img src="./img/products/chair-01.png" alt="" class="card__img">
+                                    </div>
+                                    <div class="card__info">
+                                        <a href="#category" class="card__category">Chair</a>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__stars">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star-off.svg" alt="">
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price" data-value="EUR">392</div>
+                                            <button class="card__add">
+                                                <img src="./img/products/add.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <a href="#product__link" class="card__link"></a>
+                                    <div class="card__photo">
+                                        <img src="./img/products/chair-02.png" alt="" class="card__img">
+                                    </div>
+                                    <div class="card__info">
+                                        <a href="#category" class="card__category">Chair</a>
+                                        <h3 class="card__title">Baltsar Chair</h3>
+                                        <div class="card__stars">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star-off.svg" alt="">
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price" data-value="$">299</div>
+                                            <button class="card__add">
+                                                <img src="./img/products/add.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <a href="#product__link" class="card__link"></a>
+                                    <div class="card__photo">
+                                        <img src="./img/products/chair-03.png" alt="" class="card__img">
+                                    </div>
+                                    <div class="card__info">
+                                        <a href="#category" class="card__category">Chair</a>
+                                        <h3 class="card__title">Anjay Chair</h3>
+                                        <div class="card__stars">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star-off.svg" alt="">
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price" data-value="$">519</div>
+                                            <button class="card__add">
+                                                <img src="./img/products/add.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <a href="#product__link" class="card__link"></a>
+                                    <div class="card__photo">
+                                        <img src="./img/products/chair-04.png" alt="" class="card__img">
+                                    </div>
+                                    <div class="card__info">
+                                        <a href="#category" class="card__category">Chair</a>
+                                        <h3 class="card__title">Nyantuy Chair</h3>
+                                        <div class="card__stars">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star-off.svg" alt="">
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price" data-value="$">921</div>
+                                            <button class="card__add">
+                                                <img src="./img/products/add.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <a href="#product__link" class="card__link"></a>
+                                    <div class="card__photo">
+                                        <img src="./img/products/chair-01.png" alt="" class="card__img">
+                                    </div>
+                                    <div class="card__info">
+                                        <a href="#category" class="card__category">Chair</a>
+                                        <h3 class="card__title">Sakarias Armchair</h3>
+                                        <div class="card__stars">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star-off.svg" alt="">
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price" data-value="EUR">392</div>
+                                            <button class="card__add">
+                                                <img src="./img/products/add.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <a href="#product__link" class="card__link"></a>
+                                    <div class="card__photo">
+                                        <img src="./img/products/chair-02.png" alt="" class="card__img">
+                                    </div>
+                                    <div class="card__info">
+                                        <a href="#category" class="card__category">Chair</a>
+                                        <h3 class="card__title">Baltsar Chair</h3>
+                                        <div class="card__stars">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star-off.svg" alt="">
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price" data-value="$">299</div>
+                                            <button class="card__add">
+                                                <img src="./img/products/add.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <a href="#product__link" class="card__link"></a>
+                                    <div class="card__photo">
+                                        <img src="./img/products/chair-03.png" alt="" class="card__img">
+                                    </div>
+                                    <div class="card__info">
+                                        <a href="#category" class="card__category">Chair</a>
+                                        <h3 class="card__title">Anjay Chair</h3>
+                                        <div class="card__stars">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star-off.svg" alt="">
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price" data-value="$">519</div>
+                                            <button class="card__add">
+                                                <img src="./img/products/add.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card swiper-slide">
+                                    <a href="#product__link" class="card__link"></a>
+                                    <div class="card__photo">
+                                        <img src="./img/products/chair-04.png" alt="" class="card__img">
+                                    </div>
+                                    <div class="card__info">
+                                        <a href="#category" class="card__category">Chair</a>
+                                        <h3 class="card__title">Nyantuy Chair</h3>
+                                        <div class="card__stars">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star.svg" alt="">
+                                            <img src="./img/products/star-off.svg" alt="">
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price" data-value="$">921</div>
+                                            <button class="card__add">
+                                                <img src="./img/products/add.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button id="sliderPrev" class="slider__btn slider__btn--prev">
+                            <img src="./img/products/arrow-left.svg" alt="">
+                        </button>
+                        <button id="sliderNext" class="slider__btn slider__btn--next">
+                            <img src="./img/products/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="products__footer">
+                    <a href="#!" class="products__link link">View all</a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container container--small">
+                <div class="footer__content">
+                    <div class="footer__desc">
+                        <div class="footer__logo">
+                            <a href="#" class="logo">Panto</a>
+                        </div>
+                        <p class="footer__text">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+                    </div>
+                    <div class="footer__nav footer__nav--services">
+                        <nav>
+                            <h3 class="footer__nav-title">Services</h3>
+                            <ul class="footer__list">
+                                <li><a href="#!" class="footer__link">Email Marketing</a></li>
+                                <li><a href="#!" class="footer__link">Campaigns</a></li>
+                                <li><a href="#!" class="footer__link">Branding</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__nav">
+                        <nav>
+                            <h3 class="footer__nav-title">Furniture</h3>
+                            <ul class="footer__list">
+                                <li><a href="#!" class="footer__link">Beds</a></li>
+                                <li><a href="#!" class="footer__link">Chair</a></li>
+                                <li><a href="#!" class="footer__link">All</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__row">
+                    <h3 class="footer__copyright">Copyright © 2021</h3>
+                    <div class="footer__links">
+                        <a href="#!" class="footer__row-link">Terms & Conditions</a>
+                        <a href="#!" class="footer__row-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

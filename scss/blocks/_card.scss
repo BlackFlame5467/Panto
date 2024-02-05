@@ -1,0 +1,107 @@
+.card {
+    position: relative;
+
+    width: 270px;
+    // height: 440px;
+
+    font-family: $font-accent;
+    &__photo {
+        text-align: center;
+        border-radius: 20px 20px 0 0;
+        height: 240px;
+
+        background: $bg-card;
+
+        margin: 50px 0 0 0;
+    }
+
+    &__img {
+        margin: -50px 0 0 0;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        height: 200px;
+        border-radius: 0 0 20px 20px;
+        padding: 13px 21px 27px;
+
+        background: $bg-main;
+    }
+
+    &__category {
+        position: relative;
+        z-index: 3;
+
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-light-gray;
+    }
+
+    &__title {
+        font-size: 21px;
+        font-weight: 600;
+        text-transform: capitalize;
+        line-height: 26px;
+        color: $color-blue;
+    }
+
+    &__stars {
+        display: inline-flex;
+        gap: 6px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+    }
+
+    &__price {
+        display: flex;
+        align-items: flex-start;
+        gap: 3px;
+
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 26px;
+        color: $color-blue;
+
+        &::before {
+            content: attr(data-value);
+
+            font-size: 15px;
+            line-height: 1;
+        }
+    }
+
+    &__add {
+        position: relative;
+        z-index: 3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 13px;
+        background: $bg-add-btn;
+        border-radius: 50%;
+
+        transition: opacity .3s ease-in;
+
+        &:hover {
+            opacity: .9;
+        }
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}

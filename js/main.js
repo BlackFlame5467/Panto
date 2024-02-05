@@ -17,3 +17,21 @@ document.addEventListener('click', function(){
 infoHints.forEach(function(element){
     element.addEventListener('click', (e) => e.stopPropagation());
 });
+
+// Swiper
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    // loop: true,
+  
+    slidesPerView: 4,
+    spaceBetween: 42,
+    freeMode: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '#sliderNext',
+      prevEl: '#sliderPrev',
+    }
+  });

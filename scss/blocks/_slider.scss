@@ -1,0 +1,30 @@
+.slider {
+    position: relative;
+
+    &__btn {
+        position: absolute;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: $bg-main;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__btn--prev {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -100%);
+    }
+
+    &__btn--next {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -100%);
+    }
+
+
+}

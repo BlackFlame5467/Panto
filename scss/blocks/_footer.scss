@@ -1,0 +1,68 @@
+.footer {
+    padding: 120px 0 86px 0;
+
+    a {
+        color: $color-footer;
+    }
+    color: $color-footer;
+    background: $bg-footer;
+    &__content {
+        display: grid;
+        grid-template-columns: 3fr 1fr 2fr 2fr 2fr;
+        margin: 0 0 118px 0;
+    }
+
+    &__desc {}
+
+    &__logo {
+        margin: 0 0 30px 0;
+    }
+
+    &__text {   
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    &__nav {
+
+        &--services {
+            grid-column-start: 3;
+        }
+
+    }
+
+
+    &__nav-title {
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: -0.23px;
+        margin: 0 0 20px 0;
+        color: $color-footer-accent;
+        font-family: $font-second;
+    }
+
+    &__list {
+        display: grid;
+        gap: 16px;
+    }
+
+    &__link {}
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        &-link {}
+    }
+
+    &__copyright {
+        font-family: $font-second;
+    }
+
+    &__links {
+        display: flex;
+        gap: 40px;
+    }
+
+
+}
+

@@ -1,0 +1,55 @@
+.products {
+    padding: 50px 0;
+
+    background: $bg-accent;
+    color: $color-accent;
+
+    &__title {
+        text-align: center;
+        font-size: 42px;
+        margin: 0 0 30px 0;
+        font-weight: 700;
+    }
+    &__tabs {
+        text-align: center;
+        margin: 0 0 80px 0;
+    }
+    &__tabs-inner {
+        display: inline-flex;
+        padding: 6px;
+        border-radius: 44px;
+
+        background: $bg-light-gray;
+        text-align: center;
+        
+    }
+
+    &__tab {
+        padding: 7px 20px;
+        border-radius: 32px;
+
+        font-size: 18px;
+        color: rgba(30, 30, 30, 0.8);
+        background: transparent;
+        opacity: .8;
+
+        transition: background .3s ease-in;
+
+        &--active {
+            background: $bg-main;
+        }
+        &:hover {
+            background: rgba($color: $bg-main, $alpha: .6);
+        }
+    }
+
+    &__cards {
+        margin: 0 0 60px 0;
+    }
+    &__footer {
+        text-align: center;
+    }
+    &__link {
+        font-size: 18px;
+    }
+}

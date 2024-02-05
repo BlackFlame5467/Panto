@@ -10,8 +10,38 @@ body {
     max-width: 1310px;
     padding: 0 15px;
     margin: 0 auto;
+
+    &--small {
+        max-width: 1094px;
+    }
 }
 
 .none {
     display: none !important;
+}
+.link {
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+
+    color: $color-orange;
+    font-size: 14px;
+    line-height: 1.85;
+
+    transition: gap .3s ease-in;
+
+    &::after {
+        content: url(../img/benefits/arrow.svg);
+        height: 24px;
+    }
+
+    &:hover {
+        gap: 20px;
+    }
+}
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: $color-main !important;
 }
