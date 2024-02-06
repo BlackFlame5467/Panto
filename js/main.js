@@ -3,6 +3,8 @@ const infoHints = document.querySelectorAll('.info__hint');
 const tabBtns = document.querySelectorAll('[data-tab]');
 const tabCards = document.querySelectorAll('[data-tab-value]');
 
+console.log(tabsCards);
+
 infoBtns.forEach(function(element) {
     element.addEventListener('click', function(e){
         e.stopPropagation();
