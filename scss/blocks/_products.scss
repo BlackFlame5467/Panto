@@ -35,11 +35,17 @@
 
         transition: background .3s ease-in;
 
-        &--active {
-            background: $bg-main;
-        }
         &:hover {
             background: rgba($color: $bg-main, $alpha: .6);
+        }
+
+        &--active {
+            background: $bg-main;
+
+            &:hover {
+                background: $bg-main;
+
+            }
         }
     }
 

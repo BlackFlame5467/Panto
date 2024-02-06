@@ -233,6 +233,7 @@ body a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
   box-sizing: border-box;
   border: 0.86px solid rgba(255, 255, 255, 0.6);
   border-radius: 42px;
@@ -241,6 +242,7 @@ body a {
   background: rgba(255, 255, 255, 0.15);
 }
 .search-form__input {
+  flex-grow: 1;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -251,6 +253,7 @@ body a {
   opacity: 0.8;
 }
 .search-form__btn {
+  flex-shrink: 0;
   padding: 11px;
   border-radius: 24px;
   background: #E58411;
@@ -395,11 +398,14 @@ body a {
   opacity: 0.8;
   transition: background 0.3s ease-in;
 }
+.products__tab:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
 .products__tab--active {
   background: #fff;
 }
-.products__tab:hover {
-  background: rgba(255, 255, 255, 0.6);
+.products__tab--active:hover {
+  background: #fff;
 }
 .products__cards {
   margin: 0 0 60px 0;
