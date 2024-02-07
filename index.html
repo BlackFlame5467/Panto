@@ -37,19 +37,24 @@
                         <img class="cart__img" src="./img/header/bag.svg" alt="">
                         <div href="#" class="cart__count">0</div>
                     </a>
+                    <button class="nav__btn">
+                        <img src="./img/header/burger-open.svg" alt="">
+                    </button>
                 </nav>
             </div>
             <div class="header__content">
                 <h1 class="header__title">Make your interior more minimalistic & modern</h1>
                 <p class="header__subtitle">Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
-                <form action="" class=" header__form search-form">
-                    <input type="text" class="search-form__input" placeholder="Search furniture">
-                    <button class="search-form__btn">
-                        <img src="./img/header/search.svg" alt="">
-                    </button>
-                </form>
+                <div class="header__form">
+                    <form action="" class=" header__form search-form">
+                        <input type="text" class="search-form__input" placeholder="Search furniture">
+                        <button class="search-form__btn">
+                            <img src="./img/header/search.svg" alt="">
+                        </button>
+                    </form>
+                </div>
             </div>
-            <div class="header__dot-sofa">
+            <div class="header__dot header__dot--sofa">
                 <button class="info__dot">
                     <div class="info__dot-center"></div>
                     <div class="info__dot-radius"></div>
@@ -69,7 +74,7 @@
                     </label>
                 </div>
             </div>
-            <div class="header__dot-vase">
+            <div class="header__dot header__dot--vase">
                 <button class="info__dot">
                     <div class="info__dot-center"></div>
                     <div class="info__dot-radius"></div>
@@ -89,7 +94,7 @@
                     </label>
                 </div>
             </div>
-            <div class="header__dot-item">
+            <div class="header__dot header__dot--item">
                 <button class="info__dot">
                     <div class="info__dot-center"></div>
                     <div class="info__dot-radius"></div>
@@ -109,7 +114,7 @@
                     </label>
                 </div>
             </div>
-            <div class="header__dot-wall">
+            <div class="header__dot header__dot--wall">
                 <button class="info__dot">
                     <div class="info__dot-center"></div>
                     <div class="info__dot-radius"></div>
@@ -135,7 +140,9 @@
         <section class="benefits">
             <div class="container">
                 <div class="benefit__list">
-                    <h2 class="benefits__title">Why Choosing Us</h2>
+                    <div class="benefits__title">
+                        <h2 class="title">Why Choosing Us</h2>
+                    </div>
                     <div class="benefit">
                         <h3 class="benefit__title">Luxury facilities</h3>
                         <p class="benefit__text">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
@@ -156,7 +163,9 @@
         </section>
         <section class="products">
             <div class="container">
-                <h2 class="products__title">Best Selling Product</h2>
+                <div class="products__title">
+                    <h2 class="title">Best Selling Product</h2>
+                </div>
                 <div class="products__tabs">
                     <div class="products__tabs-inner">
                         <button data-tab="chair" class="products__tab">Chair</button>
@@ -168,11 +177,9 @@
                 <div class="products__cards">
                     <div class="slider">
 
-                        <!-- Slider main container -->
+                    
                         <div class="swiper">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
                                 <div data-tab-value="chair" class="card swiper-slide">
                                     <a href="#product__link" class="card__link"></a>
                                     <div class="card__photo">
@@ -581,47 +588,82 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container container--small">
-                <div class="footer__content">
-                    <div class="footer__desc">
-                        <div class="footer__logo">
-                            <a href="#" class="logo">Panto</a>
-                        </div>
-                        <p class="footer__text">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+    </main>
+    <footer class="footer">
+        <div class="container container--small">
+            <div class="footer__content">
+                <div class="footer__desc">
+                    <div class="footer__logo">
+                        <a href="#" class="logo">Panto</a>
                     </div>
-                    <div class="footer__nav footer__nav--services">
-                        <nav>
-                            <h3 class="footer__nav-title">Services</h3>
-                            <ul class="footer__list">
-                                <li><a href="#!" class="footer__link">Email Marketing</a></li>
-                                <li><a href="#!" class="footer__link">Campaigns</a></li>
-                                <li><a href="#!" class="footer__link">Branding</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="footer__nav">
-                        <nav>
-                            <h3 class="footer__nav-title">Furniture</h3>
-                            <ul class="footer__list">
-                                <li><a href="#!" class="footer__link">Beds</a></li>
-                                <li><a href="#!" class="footer__link">Chair</a></li>
-                                <li><a href="#!" class="footer__link">All</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <p class="footer__text">The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
                 </div>
-                <div class="footer__row">
-                    <h3 class="footer__copyright">Copyright © 2021</h3>
-                    <div class="footer__links">
-                        <a href="#!" class="footer__row-link">Terms & Conditions</a>
-                        <a href="#!" class="footer__row-link">Privacy Policy</a>
-                    </div>
+                <div class="footer__nav footer__nav--services">
+                    <nav>
+                        <h3 class="footer__nav-title">Services</h3>
+                        <ul class="footer__list">
+                            <li><a href="#!" class="footer__link">Email Marketing</a></li>
+                            <li><a href="#!" class="footer__link">Campaigns</a></li>
+                            <li><a href="#!" class="footer__link">Branding</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__nav">
+                    <nav>
+                        <h3 class="footer__nav-title">Furniture</h3>
+                        <ul class="footer__list">
+                            <li><a href="#!" class="footer__link">Beds</a></li>
+                            <li><a href="#!" class="footer__link">Chair</a></li>
+                            <li><a href="#!" class="footer__link">All</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </footer>
-    </main>
+            <div class="footer__row">
+                <h3 class="footer__copyright">Copyright © 2021</h3>
+                <div class="footer__links">
+                    <a href="#!" class="footer__row-link">Terms & Conditions</a>
+                    <a href="#!" class="footer__row-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <div class="mobile-nav__wrapper">
+
+        <div class="mobile-nav__header">
+            <a href="#!" class="mobile-cart">
+                <div class="cart">
+                    <img class="cart__img" src="./img/header/bag.svg" alt="">
+                    <div href="#" class="cart__count">0</div>
+                </div>
+                Cart
+            </a>
+
+            <button class="mobile-nav__btn-close">
+                <img src="./img/header/burger-close.svg" alt="">
+            </button>
+
+        </div>
+
+        <ul class="mobile-nav">
+            <li>
+                <a href="#!" class="mobile-nav__link">Furniture</a>
+                <div class="mobile-nav__subnav">
+                    <ul class="subnav">
+                        <li><a href="#!" class="subnav__link">Home</a></li>
+                        <li><a href="#!" class="subnav__link">Services</a></li>
+                        <li><a href="#!" class="subnav__link">About</a></li>
+                        <li><a href="#!" class="subnav__link">Contacts</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#!" class="mobile-nav__link">Shop</a></li>
+            <li><a href="#!" class="mobile-nav__link">About Us</a></li>
+            <li><a href="#!" class="mobile-nav__link">Contact</a></li>
+        </ul>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>

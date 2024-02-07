@@ -8,5 +8,11 @@
     &__link {
         align-self: center;
     }
+    &__btn {
+        display: none;
 
+        @include mediaTablet {
+            display: block;
+        }
+    }
 }

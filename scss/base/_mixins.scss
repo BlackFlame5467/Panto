@@ -10,9 +10,24 @@
 
     line-height: 1.15;
 }
-
-@mixin mediaTablet {
-    @media  screen and (max-width: $tablet) {
+@mixin mediaLeptop {
+    @media  screen and (max-width: 1399px) {
         @content
     }
-}
+};
+
+@mixin mediaTablet {
+    @media  screen and (max-width: 992px) {
+        @content
+    }
+};
+@mixin mediaMobileXL {
+    @media  screen and (max-width: 819px) {
+        @content
+    }
+};
+@mixin mediaMobile {
+    @media  screen and (max-width: 629px) {
+        @content
+    }
+};

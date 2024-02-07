@@ -1,12 +1,11 @@
 .benefits {
-    padding: 120px 0;
+    // padding: 120px 0;
+    padding: clamp(3.75rem, 2.679rem + 5.36vw, 7.5rem) 0;
 
 
     color: $color-accent;
     &__title {
         max-width: 260px;
-        font-size: 42px;
-        font-weight: 700;
     }
 }
 .benefit {
@@ -14,7 +13,16 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
+
+        @include mediaTablet {
+            grid-template-columns: repeat(2, 1fr);
+            gap: clamp(1.875rem, 0.982rem + 4.46vw, 3.75rem) 20px;
+        }
+        @include mediaMobile {
+            grid-template-columns: 1fr;
+        }
     }
+
 
     &__title {
         font-size: 24px;

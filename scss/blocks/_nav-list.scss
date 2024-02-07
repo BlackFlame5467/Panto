@@ -7,6 +7,11 @@
     align-items: center;
     gap: 65px;
     
+
+    @include mediaTablet {
+        display: none;
+    }
+
     &-link {
         font-size: 18px;
         transition: opacity .3s ease-in;
@@ -26,9 +31,6 @@
                 transition: transform .3s ease-in;
             }
 
-            // &:hover::after {
-            //     transform: rotate(-180deg);
-            // }
         }
     }
     &-item {
