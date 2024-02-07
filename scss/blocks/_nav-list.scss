@@ -26,9 +26,9 @@
                 transition: transform .3s ease-in;
             }
 
-            &:hover::after {
-                transform: rotate(-180deg);
-            }
+            // &:hover::after {
+            //     transform: rotate(-180deg);
+            // }
         }
     }
     &-item {
@@ -49,6 +49,10 @@
 
         transition: all .3s ease-in;
     }
+}
+
+.nav__list-item:hover  .nav__list-link--menu::after {
+    transform: rotate(-180deg);
 }
 
 .nav__list-item:hover .nav__list-menu {

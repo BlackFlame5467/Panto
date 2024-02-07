@@ -217,9 +217,6 @@ body a {
   height: 24px;
   transition: transform 0.3s ease-in;
 }
-.nav__list-link--menu:hover::after {
-  transform: rotate(-180deg);
-}
 .nav__list-item {
   position: relative;
 }
@@ -235,6 +232,10 @@ body a {
   width: 140px;
   transform: translate(0%, 10%);
   transition: all 0.3s ease-in;
+}
+
+.nav__list-item:hover .nav__list-link--menu::after {
+  transform: rotate(-180deg);
 }
 
 .nav__list-item:hover .nav__list-menu {
