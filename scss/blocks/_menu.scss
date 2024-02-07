@@ -1,0 +1,12 @@
+.menu {
+    display: grid;
+    gap: 15px;
+
+    &__link {
+
+        transition: opacity .3s ease-in;
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
